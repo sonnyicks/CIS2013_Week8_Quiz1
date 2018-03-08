@@ -21,6 +21,7 @@ int calc (int cents){
 	int nickles=0;
 	int pennies=0;
 	
+	cout<<cents<<" cents; ";
 	quarters=cents/25;
 	cents=cents%25;
 	if (cents!=0){
@@ -31,8 +32,8 @@ int calc (int cents){
 		cents=cents%5;
 	} 
 	}
-	if (quarters!=0){cout<<quarters<< " quarters ";}
-	if (dimes!=0){cout<<dimes<<" dimes ";}
-	if (nickles!=0){cout<<nickles<<" nickles ";}
-	if (cents!=0){cout<<cents<<" pennies ";}
+	if (quarters!=0){cout<<quarters<< " quarters";}
+	if (dimes!=0){cout<<", "<<dimes<<" dimes";}
+	if (nickles!=0){cout<<", "<<nickles<<" nickles";}
+	if (cents!=0){cout<<", "<<cents<<" pennies";}
 	}
